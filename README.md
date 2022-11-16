@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-<strong>Bender was wrote to be a Personal Assistant Bot for my Streaming srever</strong>
+<strong>Bender was wrote to be a Personal Assistant Bot for my Streaming server.</strong>
 </p>
 
 <h2>Prefix: !</h2>
