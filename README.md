@@ -19,6 +19,7 @@
 • Store</br>
 • Inventory</br>
 • Leveling system</br>
+• Activity Rewards</br>
 • Miscellaneous</ul>
   </p>
 </details>
