@@ -1,0 +1,48 @@
+Trigger: $getServerVar[prefix]weekly
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+
+$onlyForChannels[1035598899450216489;> Please head to the <#1035598899450216489> to receive your weekly reward.]
+
+$nomention
+$title[Weekly]
+$color[b8f5bb]
+$description[Hey $username, here is your weekly $$if[$hasRole[$authorID;1041201781507629148]==true]$multi[$random[5000;10000];1]$elseif[$hasRole[$authorID;1041195868344295424]==true]$multi[$random[5000;10000];2]$elseif[$hasRole[$authorID;1041195981594693722]==true]$multi[$random[5000;10000];3]$elseif[$hasRole[$authorID;1041196046086312026]==true]$multi[$random[5000;10000];5]
+$endif
+
+You can also run the command `!daily`, `!weekly` and `!monthly` for more Cash!]
+
+$c[x1]
+$if[$hasRole[$authorID;1041201781507629148]==true]
+$setUserVar[🪙;$sum[$getUserVar[🪙];$multi[$random[5000;10000];1]]]
+
+$c[x2]
+$elseif[$hasRole[$authorID;1041195868344295424]==true]
+$setUserVar[🪙;$sum[$getUserVar[🪙];$multi[$random[5000;10000];2]]]
+
+$c[x3]
+$elseif[$hasRole[$authorID;1041195981594693722]==true]
+$setUserVar[🪙;$sum[$getUserVar[🪙];$multi[$random[5000;10000];3]]]
+
+$c[x5]
+$elseif[$hasRole[$authorID;1041196046086312026]==true]
+$setUserVar[🪙;$sum[$getUserVar[🪙];$multi[$random[5000;10000];5]]]
+
+$else
+
+$endif
+
+
+$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
+$footer[provided by Big Apple Bank]
+$color[b8f5bb]
+
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$addTimestamp
+$globalCooldown[7d;Your next weekly reward you can be claimed in %time%!]
+$ignoreTriggerCase
+
+
+
