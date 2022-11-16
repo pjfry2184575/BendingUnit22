@@ -6,6 +6,10 @@
 <img src="https://gyazo.com/8cbdc340227eacfa3375294d5944d551.png)" /></a>   
 </p>
 
+<p align="center">
+<strong>Bender Bot</strong>
+</p>
+
 <h2>Prefix: !</h2>
 
  
