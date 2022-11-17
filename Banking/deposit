@@ -1,0 +1,45 @@
+Trigger: $getServerVar[prefix]dep
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForChannels[1035598899450216489;> Please head to the <#1035598899450216489> to make a deposit.]
+
+$nomention
+$reply
+ 
+$c[Check Variables]
+      $varExistError[🏦;**⚠️Variable needed, Name : `🏦` , Value : `0`**]
+       $varExistError[🪙;**⚠️Variable needed, Name : `🪙`, Value : `500`**] 
+
+$varExistError[🎫;**⚠️Variable needed, Name : `🎫`, Value : `0`**]
+       
+$c[Limiters]
+ 
+     $onlyIf[$guildID!=;]
+       $onlyIf[$noMentionMessage!=;**⚠️Provide an amount to deposit**]
+        $onlyIf[$isNumber[$noMentionMessage]==true;**⚠️Invalid number or usage**]
+         $onlyIf[$checkContains[$noMentionMessage;-;.]!=true;**⚠️Invalid number or usage**]
+          $onlyIf[$getUserVar[🪙;$authorID]>=$noMentionMessage;**⚠️You don't have that much money in your pocket**]
+   
+$c[Message to user]
+     
+     $title[✅ Success]
+     $description[```You have deposited $numberSeparator[$noMentionMessage;,]🪙.```]
+     $addTimestamp
+     $thumbnail[$userAvatar[$botID]]
+$color[b8f5bb]
+$footer[provided by Big Apple Bank]
+    
+ 
+$c[Variables Changes]
+    
+    $setUserVar[🪙;$sub[$getUserVar[🪙;$authorID];$noMentionMessage];$authorID]
+    $setUserVar[🏦;$sum[$getUserVar[🏦;$authorID];$noMentionMessage];$authorID]
+
+
+$author[$username#$discriminator[]]
+$thumbnail[$authorAvatar]
+$ignoreTriggerCase
+   $botTyping
+      

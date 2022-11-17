@@ -1,0 +1,13 @@
+Trigger: $getServerVar[prefix]addBankCash
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+
+$onlyForRoles[1012542464638324813;> I do apologize, but unfortunately Fry is the only one able to use this command.]
+
+$setUserVar[🏦;$sum[$getUserVar[🏦;$authorID];$message[1]];$authorID]
+
+$footer[provided by Big Apple Bank]
+$color[b8f5bb]

@@ -1,0 +1,79 @@
+Trigger: $onInteraction[helpBack]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForServers[1012542464638324808;]
+
+$nomention
+$title[Help Menu]
+$description[
+$c[Everyone]
+$addField[**__Chat Level__**;
+```
+• $getServerVar[prefix]level
+• $getServerVar[prefix]top
+• $getServerVar[prefix]5top
+• $getServerVar[prefix]10top
+```
+]
+
+$c[Everyone]
+$addField[**__Bank__**;
+```
+• $getServerVar[prefix]bal
+• $getServerVar[prefix]dep <amount>
+• $getServerVar[prefix]wd <amount>
+• $getServerVar[prefix]slots <amount>
+• $getServerVar[prefix]rob <@mention>
+• $getServerVar[prefix]hourly
+• $getServerVar[prefix]daily
+• $getServerVar[prefix]weekly
+• $getServerVar[prefix]monthly
+```
+]
+
+$addField[**__Store__**;
+```
+• $getServerVar[prefix]store 
+• $getServerVar[prefix]inv
+• $getServerVar[prefix]buy <code> <amount>
+• $getServerVar[prefix]redeem <code> <amount>
+```
+]
+
+$c[Everyone]
+$addField[**__Miscellaneous__**;
+```
+• $getServerVar[prefix]donations
+```
+]
+$endif
+]
+
+$c[Owner Role]
+$if[$hasRole[$authorID;1012542464638324813]==true]
+$addButton[no;Owner;Owner;secondary;no;]
+$endif
+
+$c[Server Mod Role]
+$if[$hasRole[$authorID;1012542464638324811]==true]
+$addButton[yes;serMod;Server Mod;secondary;no;]
+$endif
+
+$c[Stream Mod Role]
+$if[$hasRole[$authorID;1012542464638324812]==true]
+$addButton[no;strMod;Stream Mod;secondary;no;]
+$endif
+
+$c[Team Planet Express Role]
+$if[$hasRole[$authorID;1034740701021339668]==true]
+$addButton[yes;TPE;Team Planet Express;secondary;no;]
+$endif
+
+$removeComponent[helpBack;]
+
+
+$footer[provided by Bender, because he seems to like you.]
+$color[ffffff]
+$deletecommand

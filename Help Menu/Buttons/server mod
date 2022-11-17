@@ -1,0 +1,26 @@
+Trigger: $onInteraction[serMod]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Server Mod Commands]
+$description[
+$addField[This is only for the Server Moderators;
+```
+• $getServerVar[prefix]
+• $getServerVar[prefix]
+```
+]
+]
+
+$removeComponent[Owner;]
+$removeComponent[strMod;]
+$removeComponent[serMod;]
+$removeComponent[TPE;]
+
+$addButton[yes;helpBack;Back;secondary;no;]
+
+$footer[provided by Bender, because he seems to like you.]
+$color[$getRoleColor[$highestRole[$authorID]]]
+$deletecommand

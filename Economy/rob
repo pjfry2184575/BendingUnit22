@@ -1,0 +1,44 @@
+Trigger: $getServerVar[prefix]rob
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForChannels[1035627872418807828;> Please head to the <#1035627872418807828> to make a quick buck.]
+
+$nomention
+
+$suppressErrors[Please make sure you are mentioning a person and not a role]
+
+$if[$random[1;3]==2]
+
+$setUserVar[🪙;$sub[$getUserVar[🪙;$mentioned[1]];$random[0;$getUserVar[🪙;$mentioned[1]]]];$mentioned[1]]
+
+$setUserVar[🪙;$sum[$getUserVar[🪙;$authorID];$random[0;$getUserVar[🪙;$mentioned[1]]]];$authorID]
+
+$description[You robbed 🪙 $numberSeparator[$random[0;$getUserVar[🪙;$mentioned[1]]]] from <@$mentioned[1]>]
+
+$color[00ff00]
+
+$else
+
+$setUserVar[🪙;$sub[$getUserVar[🪙;$authorID];$random[0;$sum[$getUserVar[🪙;$authorID];$getVar[🏦;$authorID];1]]];$authorID]
+
+$description[You Tried To Rob $username[$mentioned[1]] And Have Been Caught & Fined $random[0;$sum[$getUserVar[🪙;$authorID];$getUserVar[🪙;$authorID];1]]]
+
+$color[49FF00]
+
+$endif
+
+$cooldown[2m;Chill dude, You robbed someone last 2 minutes! You need to wait %time%]
+
+$onlyIf[$mentioned[1]!=$authorID; Tryna be smart, eh?]
+
+$onlyIf[$isBot[$mentioned[1]]==false;You Can't Rob Bots They Are So Powerful]
+
+$argsCheck[>1; Mention someone, idiot!]
+
+$onlyIf[$mentioned[1;yes]!=$authorID; Mention someone, idiot]
+
+$onlyIf[$getUserVar[🪙;$mentioned[1]]>0;You Tried To Rob them But The Had No Money To Take]
+
+$ignoreTriggerCase

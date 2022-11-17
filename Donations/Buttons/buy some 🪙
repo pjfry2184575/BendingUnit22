@@ -1,0 +1,27 @@
+Trigger: $onInteraction[buy🪙]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+
+$title[Buying some 🪙]
+$description[
+Thank you $nickname,
+
+> `• $1 = 250,000🪙`
+
+Click on the 
+`+ What's this payment for`
+&
+Please include your Discord name and discriminator number along with the amount you have sent.
+
+**__Example__**:
+```
+$nickname#$discriminator[$authorID] $1
+```
+
+[PayPal link](https://www.paypal.me/PJFry2184575)
+]
+
+$image[https://gyazo.com/a2acfd90f67db9498ea8e5a0250d8369.jpeg]

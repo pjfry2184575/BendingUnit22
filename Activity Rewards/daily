@@ -1,7 +1,8 @@
 Trigger: $getServerVar[prefix]daily
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 
-
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 $onlyForChannels[1035598899450216489;> Please head to the <#1035598899450216489> to receive your daily reward.]
 
 $nomention

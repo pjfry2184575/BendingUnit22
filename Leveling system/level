@@ -1,0 +1,7 @@
+Trigger: $getServerVar[prefix]level
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$image[https://vacefron.nl/api/rankcard?username=$replaceText[$username[$mentioned[1;yes]]; ;%20;-1]&avatar=$userAvatar[$mentioned[1;yes]]?size=1024&level=$getUserVar[level;$mentioned[1;yes]]&rank=$getUserVar[rank;$mentioned[1;yes]]%20Rank&currentxp=$getUserVar[currentxp;$mentioned[1;yes]]&nextlevelxp=$getUserVar[nextlevelxp;$mentioned[1;yes]]&previouslevelxp=0&custombg=https://gyazo.com/a66786242d31a1d59b5fecc9a957bde1.jpeg&xpcolor=$getRoleColor[$highestRole[$authorID]]]

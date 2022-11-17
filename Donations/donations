@@ -1,0 +1,24 @@
+Trigger: $getServerVar[prefix]donation 
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Buy Coins/Donations]
+$description[
+Hello $nickname,
+
+
+ 
+All Donations or Coins bought, will go towards helping the community grow bigger & better.
+> • Getting Bender more booze.
+> • New content!
+> • Better Software
+]
+
+
+
+$addButton[no;🍺;🍺for Bender;secondary;;;]
+$addButton[no;buy🪙;Buy some 🪙;secondary;;;]
+
+

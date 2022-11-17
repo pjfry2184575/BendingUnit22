@@ -1,0 +1,30 @@
+Trigger: $onInteraction[Owner]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Owner Commands]
+$description[
+$addField[This is only for the Owner to see.;
+```
+• $getServerVar[prefix]tidy
+• $getServerVar[prefix]addPocketCash <amount> <mention>
+• $getServerVar[prefix]removePocketCash <amount> <mention>
+• $getServerVar[prefix]addBankCash <amount> <mention>
+• $getServerVar[prefix]removeBankCash <amount> <mention>
+```
+]
+]
+
+$removeComponent[Owner;]
+$removeComponent[strMod;]
+$removeComponent[serMod;]
+$removeComponent[TPE;]
+
+$addButton[yes;helpBack;Back;secondary;no;]
+
+$footer[provided by Bender, because he seems to like you.]
+
+$color[$getRoleColor[$highestRole[$authorID]]]
+$deletecommand

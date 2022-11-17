@@ -1,0 +1,20 @@
+Trigger: $getServerVar[prefix]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$setUserVar[currentxp;$sum[$getUserVar[currentxp;$authorID];$random[1;9]];$authorID]
+
+$if[$getUserVar[currentxp;$authorID]>=$getUserVar[nextlevelxp;$authorID]]
+$setUserVar[rank;$sum[$getUserVar[rank;$authorID];1];$authorID]
+$setUserVar[nextlevelxp;$sum[$getUserVar[nextlevelxp;$authorID];100];$authorID]
+$setUserVar[level;$sum[$getUserVar[level;$authorID];1];$authorID]
+$setUserVar[currentxp;0;$authorID]
+
+$color[$getRoleColor[$highestRole[$authorID]]]
+$description[
+**❗__Hey <@$authorID>, you have reached level $sum[$getUserVar[level;$authorID];1]__❗**
+]
+$deleteIn[5s]
+$endif

@@ -1,7 +1,8 @@
 Trigger: $getServerVar[prefix]monthly
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 
-
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 $onlyForChannels[1035598899450216489;> Please head to the <#1035598899450216489> to receive your monthly reward.]
 
 $nomention

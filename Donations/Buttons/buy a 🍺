@@ -1,0 +1,24 @@
+Trigger: $onInteraction[🍺]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+
+$title[Buying Booze for Bender]
+$description[
+Thank you $nickname,
+
+There are 3 preset amounts and the ability to leave a custom amount for the Tip Jar.
+Each Bottle of 🍺 keeps our Bending Unit 22, up and running for a solid week. 
+
+> `• 1 Bottle of 🍺 {$2.19}`
+> `• 2 Bottles of 🍺 {$3.59}`
+> `• 4 Bottles of 🍺 {$5.89}`
+> `• 12 Bottles of 🍺 {$15.99}`
+
+[Tip Jar link](https://www.paypal.com/qrcodes/managed/2127ec40-ac3a-4b4c-865c-af0326025093?utm_source=consapp)
+]
+ 
+
+$image[https://gyazo.com/bc3ebe75b07b43aa612c90d78ff20bdf.jpeg]

@@ -1,0 +1,16 @@
+Trigger: $getServerVar[prefix]addPocketCash 
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+
+$onlyAdmin[> I do apologize, but unfortunately Fry is the only one able to use this command]
+
+$title[Money added to $nickname[$mentioned[1]]'s pocket.]
+$description[you have added $message[1]🪙.]
+
+$setUserVar[🪙;$sum[$getUserVar[🪙;$mentioned[1;yes]];$message[1]];$mentioned[1;yes]]
+
+$footer[provided by Big Apple Bank]
+$color[b8f5bb]

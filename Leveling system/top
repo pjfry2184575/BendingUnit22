@@ -1,0 +1,23 @@
+Trigger: $getServerVar[prefix]top
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForServers[1012542464638324808;]
+
+$nomention
+$title[⌨️ **Top 10 Chat Leaderboard** ⌨️]
+$description[🥇 - $getLeaderboardValue[user;level;asc;1]
+🥈 - $getLeaderboardValue[user;level;asc;2]
+🥉 - $getLeaderboardValue[user;level;asc;3]
+#4 - $getLeaderboardValue[user;level;asc;4]
+#5 - $getLeaderboardValue[user;level;asc;5]
+#6 - $getLeaderboardValue[user;level;asc;6]
+#7 - $getLeaderboardValue[user;level;asc;7]
+#8 - $getLeaderboardValue[user;level;asc;8]
+#9 - $getLeaderboardValue[user;level;asc;9]
+#10 - $getLeaderboardValue[user;level;asc;10]]
+
+
+$color[b59848]
+

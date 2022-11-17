@@ -1,0 +1,44 @@
+Trigger: $getServerVar[prefix]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForChannels[1035598899450216489;> Please head to the <#1035598899450216489> to make a withdraw.]
+
+$nomention
+$reply
+ 
+$c[Check Variables]
+      $varExistError[🏦;**⚠️Variable needed, Name : `🏦` , Value : `0`**]
+       $varExistError[🪙;**⚠️Variable needed, Name : `🪙`, Value : `500`**] 
+
+$varExistError[🎫;**⚠️Variable needed, Name : `🎫`, Value : `0`**]
+       
+$c[Limiters]
+ 
+     $onlyIf[$guildID!=;]
+       $onlyIf[$noMentionMessage!=;**⚠️Provide an amount to withdraw**]
+        $onlyIf[$isNumber[$noMentionMessage]==true;**⚠️Invalid number or usage**]
+         $onlyIf[$checkContains[$noMentionMessage;-;.]!=true;**⚠️Invalid number or usage**]
+          $onlyIf[$getUserVar[🏦;$authorID]>=$noMentionMessage;**⚠️You don't have that much money in your bank**]
+   
+$c[Message to user]
+     
+     $title[✅ Success]
+     $description[```You have withdrew $numberSeparator[$message[1];,]🪙.```]
+     $addTimestamp
+     $thumbnail[$userAvatar[$botID]]
+$color[b8f5bb]
+$footer[provided by Big Apple Bank]
+    
+ 
+$c[Variables Changes]
+    
+    $setUserVar[🪙;$sum[$getUserVar[🪙;$authorID];$message[1]];$authorID]
+    $setUserVar[🏦;$sub[$getUserVar[🏦;$authorID];$message[1]];$authorID]
+
+
+$author[$username#$discriminator[]]
+$thumbnail[$authorAvatar]
+$ignoreTriggerCase
+   $botTyping

@@ -1,3 +1,8 @@
+Trigger: $getServerVar[prefix]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 $if[$checkContains[$botCommands[-];$message[1];Do_Not_Delete_This_Text]==true]
 $c[Valid cmd]
 $else

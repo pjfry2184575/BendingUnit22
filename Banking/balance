@@ -1,0 +1,25 @@
+Trigger: $getServerVar[prefix]bal
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForChannels[1035598899450216489;> Please head to the <#1035598899450216489> to check your balance.]
+
+$nomention
+$c[Customize the code according to your bot commands]
+$title[$nickname[$mentioned[1;yes]] Bank Information]
+$description[
+**__Wallet__**: ```$numberSeparator[$getUserVar[🪙;$mentioned[1;yes]];,]```
+**__Bank__**: ```$numberSeparator[$getUserVar[🏦;$mentioned[1;yes]];,]```
+**__Networth__**:```$numberSeparator[$sum[$getUserVar[🪙;$mentioned[1;yes]];$getUserVar[🏦;$mentioned[1;yes]]]]```
+
+]
+$image[https://gyazo.com/bb19e5593722b4ecf97f33c25199305c.jpeg]
+$footer[provided by Big Apple Bank]
+$color[b8f5bb]
+
+$botTyping
+$addTimestamp
+
+$thumbnail[$userAvatar[$mentioned[1;yes]]]
+$ignoreTriggerCase
