@@ -1,0 +1,37 @@
+Trigger: $onInteraction[PerksInv]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Welcome to your inventory]
+$description[
+
+
+**__To buy more Perks__**, 
+Type: ```
+!buy <code> <amount>```
+
+
+$addField[24 Hour Shout-out;
+> `• so24h : $getUserVar[perkInvS24h;$authorID]`
+]
+
+$addField[3 Day Shout-out;
+> `• so3d : $getUserVar[perkInvS3d;$authorID]`
+]
+
+$addField[7 Day Shout-out;
+> `• so7d : $getUserVar[perkInvS7d;$authorID]`
+]
+
+ ]
+
+
+$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
+$footer[provided by Planet Express]
+$color[ef7213]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]

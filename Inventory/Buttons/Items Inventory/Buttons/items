@@ -1,0 +1,86 @@
+Trigger: $onInteraction[ItemsInv]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Welcome to your inventory]
+$description[
+
+
+**__To buy more Perks__**, 
+Type: ```
+!buy <code> <amount>```
+
+$if[$hasRole[$authorID;1037606766747320340]==true]
+$addField[Colored Roles;
+> White : $getUserVar[ItemsInvColRol⚪;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1037606897349574686]==true]
+$addField[Colored Roles;
+> Black : $getUserVar[ItemsInvColRol⚫;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1037605588894498816]==true]
+$addField[Colored Roles;
+> Purple : $getUserVar[ItemsInvColRol🟣;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1037605978562101279]==true]
+$addField[Colored Roles;
+> Yellow : $getUserVar[ItemsInvColRol🟡;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1037606481358503966]==true]
+$addField[Colored Roles;
+> Red : $getUserVar[ItemsInvColRol🔴;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1037606226281910322]==true]
+$addField[Colored Roles;
+> Green : $getUserVar[ItemsInvColRol🟢;$authorID]
+]
+$endif
+$endif
+$endif
+$endif
+$endif
+$endif
+
+
+$if[$hasRole[$authorID;1041201781507629148]==true]
+$addField[Rewards Multiplier;
+> x1 : $getUserVar[item1;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1041195868344295424]==true]
+$addField[Rewards Multiplier;
+> x2 : $getUserVar[item2;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1041195981594693722]==true]
+$addField[Rewards Multiplier;
+> x3 : $getUserVar[item3;$authorID]
+]
+
+$elseif[$hasRole[$authorID;1041196046086312026]==true]
+$addField[Rewards Multiplier;
+> x5 : $getUserVar[item5;$authorID]
+]
+$endif
+$endif
+$endif
+$endif
+
+
+ ]
+
+
+$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
+$footer[provided by Planet Express]
+$color[ef7213]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]

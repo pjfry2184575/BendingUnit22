@@ -1,0 +1,28 @@
+Trigger: $onInteraction[CollectionInv]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Welcome to your inventory]
+$description[
+
+
+**__More Collectibles to come!!!__**, 
+
+$if[$hasRole[$authorID;1037614925964656651]==true]
+$addField[Anytime Play;
+> `• atp : $getUserVar[perkInvATP;$authorID]`
+]
+$endif
+
+ ]
+
+
+$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
+$footer[provided by Planet Express]
+$color[ef7213]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]

@@ -1,0 +1,23 @@
+Trigger: $getServerVar[prefix]inv
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$onlyForChannels[1036799288698744842;> Please head to <#1036799288698744842> to visit the store .]
+
+
+$title[Welcome to your inventory]
+$description[Please Select what part of your inventory you would like to view by selecting the buttons below]
+$addButton[no;ItemsInv;Items;secondary;no;]
+$addButton[no;PerksInv;Perks;secondary;no;]
+$addButton[no;CollectionInv;Collectibles;secondary;no;]
+
+$thumbnail[https://gyazo.com/113a950b17a2a12747bc27dee0f5c8f5.png]
+$footer[provided by Momcorp]
+$color[ef7213]
+
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase

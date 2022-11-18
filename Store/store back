@@ -1,0 +1,29 @@
+Trigger: $onInteraction[storeBack]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$onlyForChannels[1036799288698744842;> Please head to <#1036799288698744842> to visit the store .]
+
+
+$nomention
+$title[Welcome to Momcorp]
+$description[Please Select what part of your inventory you would like to view by selecting the buttons below]
+
+$addButton[no;Items;Items;secondary;;🪙;]
+$addButton[no;Perks;Perks;secondary;;💪🏻;]
+$removeComponent[storeBack;]
+$removeComponent[socials;]
+$removeComponent[playTime;]
+$removeComponent[c.Roles;]
+$removeComponent[rewards;]
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp
