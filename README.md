@@ -28,7 +28,7 @@
 • Inventory</br>
 • Leveling system</br>
 • Activity Rewards</br>
-&
+&</br>
 • More</ul>
   </p>
 </details>
