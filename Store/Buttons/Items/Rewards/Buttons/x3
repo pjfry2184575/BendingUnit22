@@ -1,0 +1,29 @@
+Trigger: $onInteraction[x3]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Rewards Multipliers]
+$description[This will multiply your Activity Rewards by 3.
+
+> Code: `x3`
+> 10,000,000🪙
+]
+
+$removeButtons
+$addButton[no;rewards;Back;secondary;;🔙;]
+
+$image[https://gyazo.com/1699e2b0e6ff89a3cb2f0133cc5142e5.png]
+
+
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp

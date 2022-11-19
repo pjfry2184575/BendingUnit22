@@ -1,0 +1,31 @@
+Trigger: $onInteraction[Items]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[List of Items]
+$description[
+> • **Colored Roles**
+> • **Rewards Multiplier**
+]
+
+$removeButtons
+
+$removeComponent[Items;]
+$removeComponent[Perks;]
+
+$addButton[no;c.Roles;Color Roles;secondary;;🎨;]
+$addButton[no;rewards; Rewards Multiplier;secondary;;🏆;]
+$addButton[yes;storeBack;Back;secondary;;🔙;]
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp

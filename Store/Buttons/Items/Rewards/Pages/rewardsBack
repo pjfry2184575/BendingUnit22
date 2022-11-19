@@ -1,0 +1,30 @@
+Trigger: $onInteraction[rewardsBack]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Rewards Multiplier]
+$description[
+There are currently 3 available options.
+]
+
+$removeButtons
+
+$addButton[yes;x2;x2;secondary;;<:x2:1041227641220513792>;]
+$addButton[no;x3;x3;secondary;;<:x3:1041226617558675466>;]
+$addButton[no;x5;x5;secondary;;<:x5:1041227097164750879>;]
+$addButton[yes;rewards;Back;secondary;;🔙;]
+
+
+
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp

@@ -1,0 +1,29 @@
+Trigger: $onInteraction[Red]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Colored Roles]
+$description[This will change your role color to the color Red.
+
+> Code: `red`
+> 250,000🪙
+]
+
+$removeButtons
+$addButton[no;c.Roles;Back;secondary;;🔙;]
+
+$image[https://gyazo.com/bc6ed09de4eb4eb2f4754c6f7e419335.png]
+
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp

@@ -1,0 +1,30 @@
+Trigger: $onInteraction[White]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Colored Roles]
+$description[This will change your role color to the color White.
+
+> Code: `white`
+> 250,000🪙
+]
+
+$removeButtons
+$addButton[no;c.Roles;Back;secondary;;🔙;]
+
+$image[https://gyazo.com/87c437d709ba73ef883abe7a5ccb3ea4.png]
+
+
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$deletecommand
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp
