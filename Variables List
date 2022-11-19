@@ -3,19 +3,130 @@ Name = Value
 
 Variables
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
-loggingch = 
-rank = 0
-nextlevelxp = 100
-currentxp = 0
-level = 0
-bioInfo = 
-prefix = !
-welcomemsg = 
-welcolor = 
-footmsg = 
-channelid = 
-bioGames = 
-bioBday = 
-thumnail = 
-🪙 = 500
-🏦 = 0
+loggingch
+value=
+
+rank
+value=0
+
+nextlevelxp
+value=100
+
+currentxp
+value=0
+
+level
+value=0
+
+bioInfo
+value=
+
+prefix
+value=!
+
+welcomemsg
+value=
+
+welcolor
+value=
+
+footmsg
+value=
+
+channelid
+value=
+
+bioGames
+value=
+
+bioBday
+value=
+
+thumbnail
+value=
+
+🪙
+value=500
+
+🏦
+value=0
+
+S24h
+value=500000
+
+S3d
+value=1200000
+
+S7d
+value=3000000
+
+AnytimePlay
+value=50000000
+
+perkInvS24h
+value=0
+
+perkInvS3d
+value=0
+
+perkInvS7d
+value=0
+
+perkInvATP
+value=0
+
+ItemsInvColRol⚪
+value=✅
+
+ItemsInvColRol⚫
+value=✅
+
+ItemsInvColRol🟣
+value=✅
+
+ItemsInvColRol🟡
+value=✅
+
+ItemsInvColRol🔴
+value=✅
+
+ItemsInvColRol🟢
+value=✅
+
+2
+value=2
+
+item2
+value=✅
+
+3
+value=3
+
+item3
+value=✅
+
+5
+value=5
+
+item5
+value=✅
+
+x2
+value=0
+
+x3
+value=0
+
+x5
+
+item1
+value=✅
+
+buyRolesFooter
+value=To purchase, send "!buy <code>"
+
+participants
+value=
+
+giveawayID
+value=
