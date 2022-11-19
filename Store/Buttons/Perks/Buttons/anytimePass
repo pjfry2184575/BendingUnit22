@@ -1,5 +1,30 @@
-Trigger: $onInteraction[owner]
+Trigger: $onInteraction[playTime]
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 
 Code
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Anytime Play]
+$description[
+There are currently 1 available option.
+
+> • **Anytime Play**: 
+> Code: `atp`
+> 50,000,000🪙
+
+This perk includes, The ability to play any game I am playing, at the moment, at any time.]
+
+$image[https://gyazo.com/d83cc9cd8923fa3bff35cf4dce9111fb.png]
+$removeButtons
+$addButton[no;perkItemBack;Back;secondary;;🔙;]
+
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp

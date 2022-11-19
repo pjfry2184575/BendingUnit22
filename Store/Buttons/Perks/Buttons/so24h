@@ -1,5 +1,33 @@
-Trigger: $onInteraction[owner]
+Trigger: $onInteraction[social24]
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 
 Code
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Shout-out 24 hours]
+$description[This is a Social Shoutout for 24 hours.
+
+> Code: `so24h`
+> 500,000🪙
+
+
+I will gather your Social Media name and a(1) link to add to my Overlay for the corresponding time frame.
+]
+
+$removeButtons
+$addButton[no;socialsBack;Back;secondary;;🔙;]
+
+
+$image[https://gyazo.com/94ddb18d8db7b51651e2b1a68d184320.png]
+
+
+
+$thumbnail[https://gyazo.com/b988042648ff7d33f76d1e3faa109301.png]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp

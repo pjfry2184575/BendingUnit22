@@ -1,5 +1,33 @@
-Trigger: $onInteraction[owner]
+Trigger: $onInteraction[social7]
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
 
 Code
 ≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$reply
+$title[Shout-out 7 days]
+$description[This is a Social Shoutout for 7 Days.
+
+> Code: `so7d`
+> 3,000,000🪙
+
+
+I will gather your Social Media name and a(1) link to add to my Overlay for the corresponding time frame.
+]
+
+$removeButtons
+$addButton[no;socialsBack;Back;secondary;;🔙;]
+
+
+$image[https://gyazo.com/ff0e47ee699ac30684b80900e8bd69df.png]
+
+
+
+$thumbnail[https://gyazo.com/14fa24b6d9f05164bb1c4fb8d3ee3011.png?size=4096]
+$footer[provided by MomCorp]
+$color[$randomText[eb2021;5ab4e4]]
+$botTyping
+$author[$username#$discriminator[]]
+$authorIcon[$authorAvatar]
+$ignoreTriggerCase
+$addTimestamp
