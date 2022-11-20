@@ -1,0 +1,36 @@
+Trigger: $getServerVar[prefix]giveaway 
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+
+$time[MST]
+$ignoreTriggerCase
+$onlyIf[$getServerVar[giveawayID]==;There is already a giveaway going on]
+$onlyIf[$message[1]!=;You need to provide a time!]
+$onlyIf[$message[2]!=;You need to provide an item!]
+$onlyIf[$isNumber[$replaceText[$replaceText[$message[1];m;;1];s;;1]]==true;Failed to parse time for `$message[1]`!]
+$onlyIf[$replaceText[$replaceText[$message[1];m;;1];s;;1]<=120;The longest time to create a giveaway is `120 minutes`!]
+
+$async[a]
+$var[num;$replaceText[$replaceText[$message[1];s;;1];m;;1]]
+$var[time;$message[1]]
+$var[channel;$channelID]
+$var[prize;$replaceText[$message;$message[1];;1]]
+$var[ID;$sendEmbedMessage[$var[channel];🎉 **GIVEAWAY** 🎉;$var[prize];;React with 🎉 to enter!
+Ends in: <t:$calculate[$getTimestamp+($replaceText[$replaceText[$message[1];s;;1];m;;1]*$replaceText[$replaceText[$replaceText[$message[1];$var[num];;1];m;60;1];s;1;1])]:R> (<t:$calculate[$getTimestamp+($replaceText[$replaceText[$message[1];s;;1];m;;1]*$replaceText[$replaceText[$replaceText[$message[1];$var[num];;1];m;60;1];s;1;1])]>)
+Hosted by: <@$authorID>;#277ECD;;;1 winner(s);;;;yes;yes]]
+$addButton[no;gwy;Join;primary;no;🎉;$var[ID]]
+$setServerVar[giveawayID;$var[ID]]
+$endasync
+$await[a]
+
+$replyIn[$var[time]]
+$textSplit[$getServerVar[participants];,]
+$sendEmbedMessage[$var[channel];> Congratulations <@$findUser[$splitText[$random[0;$getTextSplitLength]]]>! You won the **$var[prize]**!;;;**$calculate[$getTextSplitLength-1] entrants [↗\](https://discord.com/channels/$guildID/$channelID/$var[ID])**;;;;;;;;no;no]
+$editMessage[$var[channel];$var[ID];🎉 **GIVEAWAY ENDED** 🎉;$var[prize];Winner: <@$findUser[$splitText[$random[0;$getTextSplitLength]]]>
+Hosted by: <@$authorID>;#277ECD;Ended at | $day $month $year $hour:$minute]
+$setServerVar[giveawayID;]
+$setServerVar[participants;]
+$removeButtons[$var[ID]]

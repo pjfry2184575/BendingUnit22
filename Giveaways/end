@@ -1,0 +1,11 @@
+Trigger: $onInteraction[gwy]
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$ephemeral
+$onlyIf[$checkContains[$getServerVar[participants];$authorID]==false;You're already entered in this giveaway!]
+🎉 You have entered the giveaway! 🎉
+$setServerVar[participants;$getServerVar[participants]$authorID,;$guildID]
+$removeButtons

@@ -1,0 +1,14 @@
+Trigger: $getServerVar[prefix]welcmds
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+Code
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+$nomention
+$title[Welcome commands]
+$description[• $getServerVar[prefix]set-thumbnail
+• $getServerVar[prefix]set-welcolor
+• $getServerVar[prefix]set-footmsg
+• $getServerVar[prefix]set-welmsg
+• $getServerVar[prefix]set-welchan
+]
+$footer[]
